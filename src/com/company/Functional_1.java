@@ -9,27 +9,27 @@ public class Functional_1 {
     }
 
     public List<Integer> square(List<Integer> nums) {
-        nums.replaceAll(n -> n*n );
+        nums.replaceAll(n -> n * n);
         return nums;
     }
 
     public List<String> addStar(List<String> strings) {
-        strings.replaceAll(s -> s+"*");
+        strings.replaceAll(s -> s + "*");
         return strings;
     }
 
     public List<String> copies3(List<String> strings) {
-        strings.replaceAll( s -> s+s+s);
+        strings.replaceAll(s -> s + s + s);
         return strings;
     }
 
     public List<String> moreY(List<String> strings) {
-        strings.replaceAll( s -> "y"+s+"y");
+        strings.replaceAll(s -> "y" + s + "y");
         return strings;
     }
 
     public List<Integer> math1(List<Integer> nums) {
-        nums.replaceAll(n -> (n+1) * 10);
+        nums.replaceAll(n -> (n + 1) * 10);
         return nums;
     }
 

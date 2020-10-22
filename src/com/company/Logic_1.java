@@ -203,61 +203,61 @@ public class Logic_1 {
     }
 
     public int withoutDoubles(int die1, int die2, boolean noDoubles) {
-        if(!noDoubles){
-            return die1+die2;
-        }else{
-            if(die1 == die2){
-                if(die1 == 6){
+        if (!noDoubles) {
+            return die1 + die2;
+        } else {
+            if (die1 == die2) {
+                if (die1 == 6) {
                     die1 = 1;
-                }else{
+                } else {
                     die1++;
-                    return die1+die2;
+                    return die1 + die2;
                 }
             }
-            return die1+die2;
+            return die1 + die2;
         }
     }
 
     public int maxMod5(int a, int b) {
-        if(a == b){
+        if (a == b) {
             return 0;
-        }else{
-            if(a % 5 == b % 5){
-                return Math.min(a,b);
+        } else {
+            if (a % 5 == b % 5) {
+                return Math.min(a, b);
             }
         }
-        return Math.max(a,b);
+        return Math.max(a, b);
     }
 
     public int redTicket(int a, int b, int c) {
-        if(a == 2 && b == 2 && c == 2){
+        if (a == 2 && b == 2 && c == 2) {
             return 10;
-        }else if(a == b && b == c){
+        } else if (a == b && b == c) {
             return 5;
-        }else if(a != c && a != b){
+        } else if (a != c && a != b) {
             return 1;
-        }else{
+        } else {
             return 0;
         }
     }
 
     public int greenTicket(int a, int b, int c) {
-        if(a != b && b != c && c != a){
+        if (a != b && b != c && c != a) {
             return 0;
-        }else if(a == b && b == c){
+        } else if (a == b && b == c) {
             return 20;
-        }else if(a == b || b == c || c == a){
+        } else if (a == b || b == c || c == a) {
             return 10;
         }
         return 0;
     }
 
     public int blueTicket(int a, int b, int c) {
-        if(a + b == 10 || b + c == 10 || a + c == 10){
+        if (a + b == 10 || b + c == 10 || a + c == 10) {
             return 10;
-        }else if((a + b) - (b + c) == 10 || (a + b) - (a + c) == 10  ){
+        } else if ((a + b) - (b + c) == 10 || (a + b) - (a + c) == 10) {
             return 5;
-        }else{
+        } else {
             return 0;
         }
     }

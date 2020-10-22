@@ -39,7 +39,7 @@ public class Functional_2 {
 
     public List<String> noYY(List<String> strings) {
         strings = strings.stream()
-                .map(s -> s+"y")
+                .map(s -> s + "y")
                 .filter(s -> !s.contains("yy"))
                 .collect(Collectors.toList());
         return strings;
@@ -55,7 +55,7 @@ public class Functional_2 {
 
     public List<Integer> square56(List<Integer> nums) {
         nums = nums.stream()
-                .map(n -> (n*n) + 10)
+                .map(n -> (n * n) + 10)
                 .filter(n -> n % 10 != 5 && n % 10 != 6)
                 .collect(Collectors.toList());
         return nums;
